@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriBite: Daily Food Tracker & Planner</title>
+    <!-- Link to your CSS file for styling -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Header Section: Contains the app title/logo -->
+
+    <header>
+        
+        <div class="app-header">
+            <img src="./assets/NutriBite.jpeg" alt="NutriBite Logo" class="logo" height="80" width="80"> <!-- Logo for the app -->
+           <h1>NUTRIBITE</h1>
+            <span>Your Healthy Bite Buddy</span>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#daily-log">Daily Log</a></li>
+                    <li><a href="#insights">Food Insights</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+<!-- the hamburger menu -->
+<div id="sidebar-toggle" class="hamburger">
+    &#9776; <!--code numbering for the hamburger icon-->
+</div>
+
+<!-- side entries within the hamburger menu -->
+<nav id="sidebar" class="sidebar">
+    <ul>
+        <li><a href="Log-In">LOG-IN</a></li>
+        <li><a href="Sign Up">SIGN UP <span class="span1"> If you dont have an account</span></a></li>
+        <li><a href="#insights">Food Insights</a></li>
+        
+    </ul>
+</nav>
+
+    <!-- Main Content Area: Where the core functionality of everything is -->
+    <main class="app-main container">
+
+        <!-- Food Analysis Section: For user input and displaying nutrition results -->
+        <section class="food-analysis-section">
+            <h2>Analyze Your Food</h2>
+            <div class="input-group">
+                <textarea id="food-input" name="Food Input" placeholder="Type your food items here..." rows="4"></textarea>
+                <!-- Button to trigger the API call -->
+                <button id="analyze-food-btn" class="btn btn-primary">Analyze Food</button>
+            </div>
+
+            <!-- Area to display nutrition results from the API -->
+            <div class="results-card">
+                <h3>Nutritional Breakdown:</h3>
+                <p class="placeholder-text">Enter food items above and click 'Analyze Food' to see results.</p>
+                
+            </div>
+
+            <!-- Simple Interactivity Example 1: Add to Daily Log -->
+            <button id="add-to-log-btn">Add to Daily Log</button>
+        </section>
+
+        <!-- Daily Food Log Section -->
+        <section class="daily-log-section" id="daily-log">
+            <h2>Your Daily Log</h2>
+            <div id="daily-log-list" class="log-card">
+                <p class="placeholder-text">Add analyzed foods to your log.</p>
+                <!-- Logged foods will be automatically inserted here by JavaScript -->
+            </div>
+            <!-- Simple Interactivity: Clear Log (click event) -->
+            <button id="clear-log-btn" class="btn btn-danger">Clear Log</button>
+        </section>
+
+        <!-- General Interactivity  Like button -->
+        <section class="general-interactivity">
+            <h2>Quick Insights</h2>
+            <div class="interaction-card">
+                <p>Did you find NutriMama helpful today?</p>
+                <button id="helpful-btn" class="btn btn-like">YES<span id="helpful-count"> 0 </span></button>
+                <button id="Nothelpful-btn" class="btn btn-like">NO<span id="Nothelpful-count"> 0 </span></button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section: Basic copyright and disclaimer -->
+    <footer class="app-footer">
+        <div class="container">
+            <p>2025 NutriBite. All rights reserved. <br>
+            <span>Disclaimer: Nutritional information provided is for general guidance and not medical advice. Consult a healthcare professional for personalized dietary plans.</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Link to your JavaScript file -->
+    <script src="./src/index.js"></script>
+</body>
+</html>
