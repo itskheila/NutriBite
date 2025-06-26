@@ -56,16 +56,16 @@ NutriBite is a simple web application that helps users analyze the nutritional c
 
 NutriBite
 assets
-          # Images and logo
+                # Images and logo
 css/
-   └── styles.css    # Main stylesheet
+  styles.css    # Main stylesheet
 
 src/
-    └── index.js      # Main JavaScript file
+    index.js     # Main JavaScript file
 
-index.html        # Main HTML file
+index.html       # Main HTML file
 
-README.md         # This file
+README.md        # This file
 
 
 
