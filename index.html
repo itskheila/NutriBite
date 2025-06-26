@@ -23,7 +23,7 @@
                     <li><a href="Log-In">LOG-IN</a></li>
                     <li><a href="Sign Up">SIGN UP</a></li>
                     <li><a href="#daily-log">Daily Log</a></li>
-                    <li><a href="#insights">Food Insights</a></li>
+                    <li><a href="#food-insight">Food Insights</a></li>
                 </ul>
             </nav>
         </div>
@@ -45,7 +45,7 @@
 
             <!-- Area to display nutrition results from the API -->
             <div class="results-card">
-                <h3>Nutritional Breakdown:</h3>
+                <h3 id="food-insight">Nutritional Breakdown:</h3>
                 <p class="placeholder-text">Enter food items above and click 'Analyze Food' to see results.</p>
                 
             </div>
@@ -58,8 +58,8 @@
         <section class="daily-log-section" id="daily-log">
             <h2>Your Daily Log</h2>
             <div id="daily-log-list" class="log-card">
-                <p class="placeholder-text">Add analyzed foods to your log.</p>
-                <!-- Logged foods will be automatically get displayed here by JavaScript -->
+                <p class="placeholder-text">ADD ANALYZED FOODS TO YOUR LOG.</p>
+                
             </div>
             <!-- Simple Interactivity: Clear Log (click event) -->
             <button id="clear-log-btn" class="btn btn-danger">Clear Log</button>
@@ -69,10 +69,12 @@
         <section class="general-interactivity">
             <h2>Quick Insights</h2>
             <div class="interaction-card">
+                <div id="food-insights"></div>
                 <p>Did you find NutriBite helpful today?</p>
                 <button id="helpful-btn" class="btn btn-like">YES<span id="helpful-count"> 0 </span></button>
                 <button id="Nothelpful-btn" class="btn btn-like">NO<span id="Nothelpful-count"> 0 </span></button>
             </div>
+            
         </section>
 
     </main>
@@ -81,7 +83,7 @@
     <footer class="app-footer">
         <div class="container">
             <p>2025 NutriBite. All rights reserved. <br>
-            <span>Disclaimer: Nutritional information provided is for general guidance and not medical advice. Consult a healthcare professional for personalized dietary plans.</span>
+            <span id="nutri">Disclaimer: Nutritional information provided is for general guidance and not medical advice. Consult a healthcare professional for personalized dietary plans.</span>
             </p>
         </div>
     </footer>
