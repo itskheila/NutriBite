@@ -51,9 +51,9 @@ NutriBite is a simple web application that helps users analyze the nutritional c
 - JavaScript (ES6)
 - [Nutritionix API](https://www.nutritionix.com/business/api)
 
-## Folder Structure
+## Folder Structure nnn
 
-```
+
 NutriBite
 assets
           # Images and logo
@@ -68,4 +68,5 @@ index.html        # Main HTML file
 README.md         # This file
 
 
-**Enjoy using NutriBite and eat healthy!**
+
+## Enjoy using NutriBite and eat healthy! 
