@@ -1,3 +1,4 @@
+
 body{
     font-family: Arial, sans-serif;
     background-color: #a9d4f7;
@@ -48,8 +49,56 @@ body{
 .nav-bar a {
     text-decoration: none;
     color: rgb(245, 239, 245);
-    font-weight: bold;
+    font-weight: small;
     padding: 10px;
     transition: background-color 0.3s ease;
     
 }
+
+.food-analysis-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 17px;
+    margin: 20px 50px;
+    height: 60vh;
+    
+}
+
+.daily-log-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 17px;
+    margin: 20px 50px;
+    height: 50vh;
+}
+
+.general-interactivity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 17px;
+    margin: 20px 50px;
+    height: 50vh;
+}
+
+.app-footer {
+    background-color: #05080c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
