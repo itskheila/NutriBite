@@ -1,25 +1,27 @@
-
-body{
+body {
     font-family: Arial, sans-serif;
     background-color: #a9d4f7;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .app-header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Moves nav to the right */
+    justify-content: space-between;
     background-color: #4a90e2;
     color: white;
-    padding: 10px 20px;
-    text-align: center;
-    
+    padding: 10px 30px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .header-title-group {
     display: flex;
     flex-direction: column;
-    margin-right: 770px; /* Adjusted for spacing */
+    align-items: flex-start;
+    margin-right: 520px;
 }
 
 .span1 {
@@ -31,65 +33,104 @@ body{
 
 .nav-bar ul {
     display: flex;
-    flex-direction: row; /* Horizontal */
-    gap: 20px;
+    flex-direction: row;
+    gap: 24px;
     list-style: none;
     padding: 0;
     margin: 0;
-
-}
-
-.img1{
-    border-radius:87px;
-    margin-right: 40px;
-    margin-top: 30px;
-
 }
 
 .nav-bar a {
     text-decoration: none;
-    color: rgb(245, 239, 245);
-    font-weight: small;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.nav-bar a:hover {
+    background: #357ab8;
+}
+
+.img1 {
+    border-radius: 50%;
+    margin-right: 24px;
+    margin-top: 0;
+}
+
+.food-analysis-section,
+.daily-log-section,
+.general-interactivity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    background-color: #f0f0f0;
+    border-radius: 17px;
+    margin: 24px 20px;
+    min-height: 250px;
+    
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    
+}
+
+textarea#food-input {
+    flex: 1;
+    border-radius: 8px;
+    border: 1px solid #b0c4de;
     padding: 10px;
-    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    resize: horizontal;
+    margin-top: 10px;
+    max-width: 100%;
+    
+   
     
 }
 
-.food-analysis-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 17px;
-    margin: 20px 50px;
-    height: 60vh;
-    
+.btn, button {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-.daily-log-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 17px;
-    margin: 20px 50px;
-    height: 50vh;
+.btn-primary:hover, .btn-like:hover, .btn-danger:hover {
+    background: #357ab8;
 }
 
-.general-interactivity{
-    display: flex;
+.btn-danger {
+   background: #357ab8;
+}
+
+.results-card, .log-card, .interaction-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 16px;
+    margin: 12px 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+.interaction-card{
+    display:flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 17px;
-    margin: 20px 50px;
-    height: 50vh;
+    align-items: center;
+    gap: 12px;
 }
 
 .app-footer {
@@ -100,5 +141,5 @@ body{
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 40px;
 }
-
