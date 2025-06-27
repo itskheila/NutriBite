@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #a9d4f7;
@@ -6,6 +7,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Header Styles */
 .app-header {
     display: flex;
     align-items: center;
@@ -17,13 +19,15 @@ body {
     box-sizing: border-box;
 }
 
+/* Header Elements */
 .header-title-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 520px;
+    margin-right: 520px; /* Adjusted for logo space */
 }
 
+/* Subtitle Styling */
 .span1 {
     font-size: 0.9rem;
     color: #e0e0e0;
@@ -31,6 +35,7 @@ body {
     margin-left: 2px;
 }
 
+/* Navigation Bar Styles */
 .nav-bar ul {
     display: flex;
     flex-direction: row;
@@ -40,6 +45,7 @@ body {
     margin: 0;
 }
 
+/* Navigation Links */
 .nav-bar a {
     text-decoration: none;
     color: #fff;
@@ -49,6 +55,7 @@ body {
     transition: 0.2s;
 }
 
+/* Navigation Link Hover Effect */
 .nav-bar a:hover {
     background: #357ab8;
 }
@@ -59,6 +66,7 @@ body {
     margin-top: 0;
 }
 
+/* Main Content Styles */
 .food-analysis-section,
 .daily-log-section,
 .general-interactivity {
@@ -69,10 +77,11 @@ body {
     background-color: #f0f0f0;
     border-radius: 17px;
     margin: 24px 20px;
-    min-height: 250px;
+    min-height: 250px; /* Ensures sections have a minimum height */
     
 }
 
+/* Section Titles */
 .input-group {
     display: flex;
     flex-direction: column;
@@ -82,20 +91,20 @@ body {
     
 }
 
+/* Input Field Styles */
 textarea#food-input {
     flex: 1;
     border-radius: 8px;
     border: 1px solid #b0c4de;
     padding: 10px;
     font-size: 1rem;
-    resize: horizontal;
+    resize: horizontal; /* Allows horizontal resizing */
     margin-top: 10px;
     max-width: 100%;
     
-   
-    
 }
 
+/* Button Styles */
 .btn, button {
     background: #4a90e2;
     color: #fff;
@@ -107,14 +116,17 @@ textarea#food-input {
     transition: 0.2s;
 }
 
+/* Button Hover Effect */
 .btn-primary:hover, .btn-like:hover, .btn-danger:hover {
     background: #357ab8;
 }
 
+/* Specific Button Styles FOr clear log btn*/
 .btn-danger {
    background: #357ab8;
 }
 
+/* Results and Log Cards Styling*/
 .results-card, .log-card, .interaction-card {
     background: #fff;
     border-radius: 10px;
@@ -125,6 +137,7 @@ textarea#food-input {
     max-width: 500px;
 }
 
+/* Results Card Specific Styles */
 .interaction-card{
     display:flex;
     flex-direction: column;
@@ -133,6 +146,7 @@ textarea#food-input {
     gap: 12px;
 }
 
+/* Footer Styles */
 .app-footer {
     background-color: #05080c;
     color: white;
@@ -144,6 +158,7 @@ textarea#food-input {
     margin-top: 40px;
 }
 
+/* Footer Text */
 #nutri{
     display: flex;
     flex-direction: column;

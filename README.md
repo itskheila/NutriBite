@@ -28,6 +28,7 @@ NutriBite is a simple web application that helps users analyze the nutritional c
     - Sign up at [Nutritionix](https://www.nutritionix.com/business/api).
     - Get your App ID and API Key.
     - Replace the placeholders in `src/index.js`:
+    
       ```js
       const APP_ID = 'YOUR_APP_ID';
       const API_KEY = 'YOUR_API_KEY';
@@ -57,6 +58,7 @@ NutriBite is a simple web application that helps users analyze the nutritional c
 NutriBite
 assets
                 # Images and logo
+
 css/
   styles.css    # Main stylesheet
 
